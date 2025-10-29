@@ -20,12 +20,9 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // Allow framing for Base mini-apps
         source: '/(.*)',
         headers: [
-          {
-            key: 'X-Frame-Options',
-            value: 'DENY',
-          },
           {
             key: 'X-Content-Type-Options',
             value: 'nosniff',
@@ -33,6 +30,20 @@ const nextConfig = {
           {
             key: 'Referrer-Policy',
             value: 'origin-when-cross-origin',
+          },
+        ],
+      },
+      {
+        // Ensure manifest is accessible with proper content type
+        source: '/.well-known/farcaster.json',
+        headers: [
+          {
+            key: 'Content-Type',
+            value: 'application/json',
+          },
+          {
+            key: 'Access-Control-Allow-Origin',
+            value: '*',
           },
         ],
       },

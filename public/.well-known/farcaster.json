@@ -1,0 +1,34 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "baseBuilder": {
+    "ownerAddress": "0x"
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "PrepX - AI Trading Bot",
+    "homeUrl": "https://your-domain.com",
+    "iconUrl": "https://your-domain.com/trading-bot-icon.svg",
+    "splashImageUrl": "https://your-domain.com/trading-illustration.svg",
+    "splashBackgroundColor": "#0d0d0d",
+    "webhookUrl": "https://your-domain.com/api/webhook",
+    "subtitle": "AI-Powered Trading Bot",
+    "description": "Advanced AI-powered trading bot for cryptocurrency markets with intelligent risk management and real-time analytics.",
+    "screenshotUrls": [
+      "https://your-domain.com/screenshot1.png",
+      "https://your-domain.com/screenshot2.png"
+    ],
+    "primaryCategory": "finance",
+    "tags": ["prepx", "trading", "ai", "cryptocurrency", "base", "miniapp"],
+    "heroImageUrl": "https://your-domain.com/trading-illustration.svg",
+    "tagline": "AI-Powered Trading Made Simple",
+    "ogTitle": "PrepX - AI Trading Bot",
+    "ogDescription": "Advanced AI-powered trading bot for cryptocurrency markets",
+    "ogImageUrl": "https://your-domain.com/trading-illustration.svg",
+    "noindex": true
+  }
+}
+
