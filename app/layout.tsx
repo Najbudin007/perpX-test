@@ -30,6 +30,22 @@ export const metadata: Metadata = {
     description: "Advanced AI-powered trading bot for cryptocurrency markets",
   },
   viewport: "width=device-width, initial-scale=1, maximum-scale=1",
+  other: {
+    "fc:miniapp": JSON.stringify({
+      version: "next",
+      imageUrl: "https://perp-x-test.vercel.app/trading-illustration.svg",
+      button: {
+        title: "Launch PrepX - AI Trading Bot",
+        action: {
+          type: "launch_miniapp",
+          name: "PrepX - AI Trading Bot",
+          url: "https://perp-x-test.vercel.app",
+          splashImageUrl: "https://perp-x-test.vercel.app/trading-illustration.svg",
+          splashBackgroundColor: "#0d0d0d",
+        },
+      },
+    }),
+  },
 }
 
 export default function RootLayout({
